@@ -1,0 +1,110 @@
+/* Estilos Generales */
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html, body{
+    height: 100%;
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: #49a452;
+}
+
+/* Estilos Header */
+.contenedorSuperiorHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logotipoHeader{
+    width: 10rem;
+}
+
+.tituloHeader{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.lineaSeparacion{
+    background-color: #49a452;
+    border-style: none;
+    height: 3px; 
+    margin: 30px 0; 
+    border-radius: 2px;
+
+}
+
+/* Estilos Main */
+
+.mainContenedor{
+    width: 100%;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.imgSobreNosotros{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.informacionPlagas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+.contenedorPlaga{
+    width: 20rem;
+}
+.plagaImagen{
+    width: 100%;
+}
+
+/* Estilos Footer */
+.contenedorFooter{
+    background-color: #49a452;
+    font-size: 1rem;
+    text-align: right;
+}
+
+
+/* Tablet */
+@media (min-width: 600px){
+    ul{
+        flex-direction: row;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px){
+    .contenedorSuperiorHeader{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
