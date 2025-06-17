@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información Plagas - FW</title>
+    <title>FumiWest</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    <header>
-        <img class="logotipoHeader" src="../img/logo-corto.JPG" alt="Logotipo de FumiWest">
-        <nav class="menuPrincipal">
-            <a href="/index.html">Volver al inicio</a>
-        </nav>
-        <hr class="lineaSeparacion">
-    </header> 
 
-    <footer class="contenedorFooter">
-        <p>© 2025 - FumiWest</p>
+<body>
+    <!-- Header -->
+    <header class="header-contenedor">
+        <div class="oscurecer-fondo">
+            <div class="header-contenedor-superior">
+                <img class="logotipo-fumiwest" src="../img/logo/1.png" alt="Logo de FumiWest">
+
+                <!-- Barra de navegación -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="../index.html#redes">Nuestras Redes</a></li>
+                        <li><a href="./preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="header-titulo">Eliminamos plagas. <br>Protegemos tu hogar</h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-general">
+        <h2 class="titulo-plagas">Información sobre las diferentes plagas.</h2>
+        <div class="plagas-flex">
+            <section class="contenedor-plagas">
+                <img class="imagen-plagas" src="../img/plagas/mosquito.jpeg" alt="Plaga de mosquitos">
+                <h3 class="mt-3 fw-bold">Mosquitos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus quia consequuntur asperiores quidem esse. Sint soluta ullam ex et nesciunt, corrupti eveniet sapiente voluptates similique officia porro, quaerat sit.</p>
+            </section>
+
+            <section class="contenedor-plagas">
+                <img class="imagen-plagas" src="../img/plagas/cucaracha.JPG" alt="Plaga cucaracha">
+                <h3 class="mt-3 fw-bold">Cucarachas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus quia consequuntur asperiores quidem esse. Sint soluta ullam ex et nesciunt, corrupti eveniet sapiente voluptates similique officia porro, quaerat sit.</p>
+            </section>
+
+            <section class="contenedor-plagas">
+                <img class="imagen-plagas" src="../img/plagas/moscas.jpg" alt="Plaga moscas">
+                <h3 class="mt-3 fw-bold">Moscas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus quia consequuntur asperiores quidem esse. Sint soluta ullam ex et nesciunt, corrupti eveniet sapiente voluptates similique officia porro, quaerat sit.</p>
+            </section>
+        </div>
+        <p class="queres-saber-mas">¿Queres saber más? <a href="./contacto.html">Contactanos</a></p>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-contenedor">
+        <p>© 2025 FumiWest. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

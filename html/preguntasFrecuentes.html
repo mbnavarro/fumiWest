@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas - FW</title>
+    <title>FumiWest</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
-    <header>
-        <img class="logotipoHeader" src="../img/logo-corto.JPG" alt="Logotipo de FumiWest">
-        <nav class="menuPrincipal">
-            <a href="/index.html">Volver al inicio</a>
-        </nav>   
-        <hr class="lineaSeparacion">
-    </header>  
-    <footer class="contenedorFooter">
-        <p>© 2025 - FumiWest</p>
+    <!-- Header -->
+    <header class="header-contenedor">
+        <div class="oscurecer-fondo">
+            <div class="header-contenedor-superior">
+                <img class="logotipo-fumiwest" src="../img/logo/1.png" alt="Logo de FumiWest">
+
+                <!-- Barra de navegación -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./infoPlagas.html">Información Plagas</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="../index.html#redes">Nuestras Redes</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="header-titulo">Eliminamos plagas. <br>Protegemos tu hogar</h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-general">
+        <section class="preguntas-respuestas">
+            <details open>
+                <summary class="pregunta">¿Qué tipo de plagas eliminan?</summary>
+                <p class="parrafo-respuesta">Trabajamos con control de cucarachas, roedores, hormigas, moscas, arañas y otras plagas urbanas.</p>
+            </details>
+
+            <details>
+                <summary class="pregunta">¿Los productos que utilizan son seguros?</summary>
+                <p class="parrafo-respuesta">Sí, utilizamos productos autorizados por SENASA, aptos para hogares con mascotas y niños.</p>
+            </details>
+
+            <details>
+                <summary class="pregunta">¿Cuánto tiempo tarda el servicio?</summary>
+                <p class="parrafo-respuesta">Depende del tipo de plaga y tamaño del lugar, pero suele durar entre 30 minutos y 2 horas.</p>
+            </details>
+
+            <details>
+                <summary class="pregunta">¿Debo abandonar la casa durante la fumigación?</summary>
+                <p class="parrafo-respuesta">En algunos casos es recomendable salir por unas horas. Te lo indicaremos antes del servicio.</p>
+            </details>
+
+            <details>
+                <summary class="pregunta">¿Ofrecen garantía?</summary>
+                <p class="parrafo-respuesta">Sí, brindamos garantía por el trabajo realizado, dependiendo del tipo de tratamiento contratado.</p>
+            </details>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-contenedor">
+        <p>© 2025 FumiWest. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
