@@ -12,7 +12,7 @@ html, body{
 }
 
 .logotipo-fumiwest{
-    width: 30rem;
+    width: 6rem;
 }
 
 ul{
@@ -31,7 +31,7 @@ a{
 }
 
 a:hover{
-    color: #49a452;
+    color: #245729;
 }
 
 .main-general{
@@ -44,7 +44,7 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 40vh;
+    height: 75vh;
 }
 
 .oscurecer-fondo{
@@ -56,22 +56,13 @@ a:hover{
 .header-titulo{
     color: #000000;
     text-align: center;
+    margin-top: 2rem;
 }
-
-.header-contenedor-superior{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 /* Estilos Main Inicio */
-.main-contenedor{
-    background-image: url(../img/plagas/img03.png);
-}
 
 .sobre-nososotros{
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-size: 1.2rem;
     padding: 2rem;
@@ -80,22 +71,6 @@ a:hover{
 .titulo-quienes-somos{
     font-size: 2rem;
     margin: 2rem;
-}
-
-.nuestras-redes{
-    margin-left: 2rem;
-}
-
-.redes{
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    gap: 0.6rem;
-}
-
-.iconos-redes{
-    width: 1rem;
-    margin-right: 0.3rem;
 }
 
 /* Estilos Main plagas */
@@ -122,6 +97,7 @@ a:hover{
     text-align: center;
     font-size: 2rem;
     padding: 3rem;
+    margin-bottom: 0;
 }
 
 /* Estilos Main Servicios */
@@ -155,16 +131,58 @@ a:hover{
 }
 
 .formulario-contacto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 500px;
+  margin: 2rem auto 0rem;
+  padding: 2rem;
+  background-color: #fdfae9;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.boton-formulario-enviar {
+  background-color: #2d7a50;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.boton-formulario-enviar:hover {
+  background-color: #256340;
 }
 
 /* Estilos Main Preguntas Frecuentes */
 .preguntas-respuestas{
-    padding: 2rem 20rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
+
 
 details {
   background: #fff;
@@ -198,7 +216,23 @@ details[open] {
     text-align: right;
 }
 
-/* Tablet
+.nuestras-redes{
+    margin-left: 2rem;
+}
+
+.redes{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.iconos-redes{
+    width: 1rem;
+    margin-right: 0.3rem;
+}
+
+/* Tablet */
 @media (min-width: 600px){
     ul{
         flex-direction: row;
@@ -206,10 +240,36 @@ details[open] {
 }
 
 /* Desktop */
-/* @media (min-width: 1200px){
+@media (min-width: 1200px){
     .contenedorSuperiorHeader{
         flex-direction: row;
         justify-content: space-between;
         padding: 1rem;
     }
-} */
+
+    .main-contenedor{
+    background-image: url(../img/plagas/img03.png);
+    }
+ 
+    .header-contenedor{
+    background-image: url(../img/plagas/header-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    }
+
+    .sobre-nososotros{
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    }
+
+    .preguntas-respuestas{
+    padding: 0.5rem 15rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+}

@@ -21,21 +21,38 @@
     <!-- Header -->
     <header class="header-contenedor">
         <div class="oscurecer-fondo">
-            <div class="header-contenedor-superior">
-                <img class="logotipo-fumiwest" src="../img/logo/1.png" alt="Logo de FumiWest">
-
-                <!-- Barra de navegación -->
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="../index.html#redes">Nuestras Redes</a></li>
-                        <li><a href="./preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <h1 class="header-titulo">Eliminamos plagas. <br>Protegemos tu hogar</h1>
+            <!-- Barra de navegación -->
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <img class="logotipo-fumiwest" src="../img/logo/sin-fondo-corto.png" alt="Logo de FumiWest">
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./infoPlagas.html">Información Plagas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#redes">Redes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="header-titulo">Eficiencia, confianza y cero plagas.</h1>
         </div>
     </header>
 
@@ -67,6 +84,17 @@
 
     <!-- Footer -->
     <footer class="footer-contenedor">
+        <section id="redes">
+            <div class="nuestras-redes">
+                <nav>
+                    <ul class="redes">
+                        <li><img class="iconos-redes" src="../img/iconos/instagram.svg" alt="Instagram FumiWest"><a href="#">Instagram</a></li>
+                        <li><img class="iconos-redes" src="../img/iconos/facebook.svg" alt="Facebook FumiWest"><a href="#">Facebook</a></li>
+                        <li><img class="iconos-redes" src="../img/iconos/tiktok.svg" alt="TikTok FumiWest"><a href="#">TikTok</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
         <p>© 2025 FumiWest. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
